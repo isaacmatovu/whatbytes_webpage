@@ -1,6 +1,5 @@
 "use client";
 
-import { Trophy, Square, CheckSquare } from "lucide-react";
 import { useSkillTest } from "@/context/SkillTestContext";
 
 export function QuickStats() {

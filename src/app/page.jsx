@@ -7,7 +7,7 @@ import { ComparisonGraph } from "@/components/ComparisonGraph";
 import { SyllabusAnalysis } from "@/components/SyllabusAnalysis";
 import { QuestionAnalysis } from "@/components/QuestionAnalysis";
 
-export default function SkillTest() {
+export default function App() {
   return (
     <SkillTestProvider>
       <div className="flex min-h-screen bg-gray-50">
