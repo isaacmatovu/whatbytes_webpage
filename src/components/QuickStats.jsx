@@ -1,43 +1,73 @@
 "use client";
 
-import { Trophy, FileText, CheckCircle } from "lucide-react";
+import { Trophy, Square, CheckSquare } from "lucide-react";
 import { useSkillTest } from "@/context/SkillTestContext";
 
 export function QuickStats() {
   const { skillTestData } = useSkillTest();
 
   return (
-    <div className="mx-auto max-w-4xl mb-8 grid grid-cols-1 gap-4 rounded-lg border p-4 sm:grid-cols-2 lg:grid-cols-3">
-      {/* Rank */}
-      <div className="flex items-center gap-3">
-        <Trophy className="h-6 w-6 text-yellow-500 sm:h-8 sm:w-8" />
-        <div>
-          <div className="text-xl font-bold sm:text-2xl">
-            {skillTestData.rank}
+    <div className="mb-8  flex flex-col items-center md:items-start border-2 rounded mt-5">
+      <h2 className="text-lg font-semibold mb-4 md:text-left">
+        Quick Statistics
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 bg-white rounded-lg">
+        {/* Rank Stat */}
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/emoji/48/trophy-emoji.png"
+              alt="trophy-emoji"
+            />
           </div>
-          <div className="text-sm text-gray-500">YOUR RANK</div>
+          <div>
+            <div className="text-2xl font-bold">{skillTestData.rank}</div>
+            <div className="text-sm text-gray-400 uppercase tracking-wide">
+              Your Rank
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Percentile */}
-      <div className="flex items-center gap-3">
-        <FileText className="h-6 w-6 text-blue-500 sm:h-8 sm:w-8" />
-        <div>
-          <div className="text-xl font-bold sm:text-2xl">
-            {skillTestData.percentile}%
+        {/* Percentile Stat */}
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/emoji/48/spiral-notepad-emoji.png"
+              alt="spiral-notepad-emoji"
+            />
           </div>
-          <div className="text-sm text-gray-500">PERCENTILE</div>
+          <div>
+            <div className="text-2xl font-bold">
+              {skillTestData.percentile}%
+            </div>
+            <div className="text-sm text-gray-400 uppercase tracking-wide">
+              Percentile
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Correct Answers */}
-      <div className="flex items-center gap-3">
-        <CheckCircle className="h-6 w-6 text-green-500 sm:h-8 sm:w-8" />
-        <div>
-          <div className="text-xl font-bold sm:text-2xl">
-            {skillTestData.score}/{skillTestData.total}
+        {/* Correct Answers Stat */}
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/emoji/48/check-mark-button-emoji.png"
+              alt="check-mark-button-emoji"
+            />
           </div>
-          <div className="text-sm text-gray-500">CORRECT ANSWERS</div>
+          <div>
+            <div className="text-2xl font-bold">
+              {skillTestData.score}/{skillTestData.total}
+            </div>
+            <div className="text-sm text-gray-400 uppercase tracking-wide">
+              Correct Answers
+            </div>
+          </div>
         </div>
       </div>
     </div>

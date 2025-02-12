@@ -1,11 +1,11 @@
-import { SkillTestProvider } from "@/context/SkillTestContext"
-import { Sidebar } from "@/components/SideBar"
-import { Header } from "@/components/Header"
-import { TestDetails } from "@/components/TestDetails"
-import { QuickStats } from "@/components/QuickStats"
-import { ComparisonGraph } from "@/components/ComparisonGraph"
-import { SyllabusAnalysis } from "@/components/SyllabusAnalysis"
-import { QuestionAnalysis } from "@/components/QuestionAnalysis"
+import { SkillTestProvider } from "@/context/SkillTestContext";
+import { Sidebar } from "@/components/SideBar";
+import { Header } from "@/components/Header";
+import { TestDetails } from "@/components/TestDetails";
+import { QuickStats } from "@/components/QuickStats";
+import { ComparisonGraph } from "@/components/ComparisonGraph";
+import { SyllabusAnalysis } from "@/components/SyllabusAnalysis";
+import { QuestionAnalysis } from "@/components/QuestionAnalysis";
 
 export default function SkillTest() {
   return (
@@ -16,7 +16,7 @@ export default function SkillTest() {
           <Header />
 
           <main className="p-4 sm:p-6">
-            <h1 className="mb-4 sm:mb-6 text-lg sm:text-xl font-semibold text-gray-800">
+            <h1 className="mb-4 sm:mb-6 text-lg sm:text-xl font-medium text-gray-800">
               Skill Test
             </h1>
 
@@ -38,5 +38,5 @@ export default function SkillTest() {
         </div>
       </div>
     </SkillTestProvider>
-  )
+  );
 }

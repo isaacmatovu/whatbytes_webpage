@@ -15,7 +15,9 @@ export function Sidebar() {
           height={30}
           className="h-8 w-8"
         />
-        <h1 className="hidden sm:block text-lg lg:text-2xl font-bold">WhatBytes</h1>
+        <h1 className="hidden sm:block text-lg lg:text-2xl font-bold">
+          WhatBytes
+        </h1>
       </div>
 
       {/* Navigation */}
@@ -27,16 +29,16 @@ export function Sidebar() {
               className="flex items-center rounded p-2 hover:bg-gray-100"
             >
               <BarChart2 className="h-5 w-5" />
-              <span className="hidden sm:block ml-2">Dashboard</span>
+              <span className="hidden sm:block ml-2 font-bold">Dashboard</span>
             </Link>
           </li>
           <li>
             <Link
               href="#"
-              className="flex items-center rounded p-2 bg-blue-100 text-blue-600"
+              className="flex items-center rounded p-2 bg-blue-100 text-blue-900"
             >
               <BookOpen className="h-5 w-5" />
-              <span className="hidden sm:block ml-2">Skill Test</span>
+              <span className="hidden sm:block ml-2 font-bold">Skill Test</span>
             </Link>
           </li>
           <li>
@@ -45,7 +47,7 @@ export function Sidebar() {
               className="flex items-center rounded p-2 hover:bg-gray-100"
             >
               <Briefcase className="h-5 w-5" />
-              <span className="hidden sm:block ml-2">Internship</span>
+              <span className="hidden sm:block ml-2 font-bold">Internship</span>
             </Link>
           </li>
         </ul>

@@ -23,10 +23,10 @@ export function TestDetails() {
               />
             </div>
             <div className="min-w-0 flex-1 text-center sm:text-left">
-              <h2 className="truncate text-base font-semibold text-gray-900 md:text-lg">
+              <h2 className="ml-4 truncate text-base font-semibold text-gray-900 md:text-lg">
                 Hyper Text Markup Language
               </h2>
-              <p className="mt-1 text-xs text-gray-500 sm:text-sm">
+              <p className="mt-1 ml-4 text-xs text-gray-600 font-medium sm:text-xl">
                 Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021
               </p>
             </div>
@@ -36,7 +36,7 @@ export function TestDetails() {
           <div className="flex-shrink-0">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="w-full rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto md:text-base"
+              className="w-full rounded-md bg-blue-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto md:text-base"
             >
               Update
             </button>
